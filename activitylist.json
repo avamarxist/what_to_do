@@ -1,0 +1,32 @@
+var activities = [
+	{"time":5, "name":"Clean bathroom sink"},
+	{"time":5, "name":"Wipe off a table"},
+	{"time":2, "name":"Put something in its place"},
+	{"time":5, "name":"Bag up garbage"},
+	{"time":5, "name":"Bleach the drains"},
+	{"time":5, "name":"Clean some dishes"},
+	{"time":2, "name":"Empty the dish rack"},
+	{"time":2, "name":"Pick up some litter"},
+	{"time":5, "name":"Spray for roaches"},
+	{"time":5, "name":"Throw some old things out of the fridge"},
+	{"time":5, "name":"Sweep the floor in one room"},
+	{"time":5, "name":"Play with the cats"},
+
+	{"time":10, "name":"Change cat litter"},
+	{"time":10, "name":"Clean the toilet"},
+	{"time":10, "name":"Wipe down the stove top"},
+	{"time":10, "name":"Text a friend"},
+	{"time":10, "name":"Do a Duolingo lesson"},
+
+	{"time":20, "name":"Take a shower"},
+
+	{"time":30, "name":"Clean the bathroom"},
+	{"time":30, "name":"Play guitar"},
+	{"time":30, "name":"Cook some food"},
+	{"time":30, "name":"Shave your legs"},
+	{"time":30, "name":"Dilate"},
+	{"time":30, "name":"Read a book"},
+	{"time":30, "name":" "},
+
+	{"time":60, "name":"Call mom and dad"},
+]

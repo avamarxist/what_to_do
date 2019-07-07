@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<style>
+			h1 {
+				font-size:xx-large;
+				padding:5%;
+			}
+			body {
+				font-family:helvetica;
+				vertical-align:center;
+				text-align:center;
+			}
+			#actAnswer {
+				font-size: larger;
+				vertical-align:text-bottom;
+			}
+			#time {
+				text-align:center;
+				width:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>You can be doing something better.</h1>
+		<p> How much time do you have to get your shit together? </p>
+		<div>
+			<input id="time"> minutes or less </input>
+			<br></br>
+			<button onClick='pickActivity()'>Fix my life</button>
+			<br></br>
+		</div>
+
+		<p id="actAnswer"></p>
+
+		<script src="activitylist.json"></script>
+		<script>
+
+			let actList = "activitylist.json";
+			console.log(activities);
+
+			function pickActivity(){
+				var timeSelect = document.getElementById('time').value;
+				console.log("time: " + timeSelect);
+
+				let actLimited = activities.filter(function(act){return act.time<=timeSelect});
+				console.log(actLimited);
+
+
+				for(let count = 0; count < actLimited.length;count++){
+					let pickID = Math.floor(Math.random()*(actLimited.length));
+					console.log("pickID = "+pickID)
+					let actPicked = actLimited[pickID].name;
+					console.log("actPicked = " + actPicked);
+					document.getElementById("actAnswer").innerHTML = actPicked;
+				}	
+			}
+		</script>
+	</body>
+
+</html>
